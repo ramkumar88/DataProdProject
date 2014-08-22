@@ -1,0 +1,257 @@
+histo?
+)
+?hist
+hist(temp)
+?plot
+plot(temp)
+pbinom(2, size = 5)
+pbinom(2, size = 5,prob=0.5)
+pbinom(4, size = 5,prob=0.5)
+pbinom(5, size = 5,prob=0.5)
+?ppois
+pbinom(c(4,5), size = 5,prob=0.5)
+6/32
+?pnorm
+dnorm(14,mean=15,sd=1)
+dnorm(16,mean=15,sd=1)
+dnorm(15,mean=15,sd=1)
+0.2419707*2
++0.3989423
+0.4839414 +0.3989423
+dnorm(seq(14,16),mean=15,sd=1)
+pnorm(seq(14,16),mean=15,sd=1)
+0.8413447 - 0.1586553
+1/12
+ppois(0,lambda=6)
+e^-6
+e
+exp?
+?
+)
+?exp
+exp(-6)
+ppois(0:10,lambda=15)
+sum(ppois(0:10,lambda=15))
+sum(ppois(0:5=4,lambda=6))
+sum(ppois(0:4,lambda=6))
+ppois(0:4,lambda=6)
+ppois(1),lambda=6)
+ppois(1,lambda=6)
+qpois(1,lambda=6)
+dpois(1,lambda=6)
+sum(dpois(0:4,lambda=6))
+sum(dpois(0:10,lambda=15))
+combn(1:9,3)
+0.8/1.1
+1/12
+1/24
+1/144
+1/12 * 1/12
+sqrt(1/12)
+10/11
+1/.15
+1/0.03
+n <- 9
+s <- 30
+round(sqrt((n - 1) * s^2/qchisq(c(0.975, 0.025), n - 1)), 3)
+1100 - 57
+1100 +  57
+sqrt((n - 1) * s^2/qchisq(c(0.975, 0.025), n - 1))
+qchisq(c(0.975, 0.025), n - 1))/sqrt(n - 1)
+sqrt(qchisq(c(0.975, 0.025), n - 1)/sqrt(n - 1))
+sqrt((n - 1) * s^2/qchisq(0.95, n - 1))
+preds <- c(TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE)
+summary(preds)
+length(which(preds))
+length(!which(preds))
+length(which(!preds))
+length(which(!preds))/length(preds)
+round(1.34323)
+round(1.34323,digits=2)
+data(mtcars)
+names(mtcars)
+?lm
+q1model <- lm (mpg ~ cyl,data=mtcars)
+predict(q1model,c(4))
+4cyl <- data.frame(c(4))
+d4cyl <- data.frame(c(4))
+d4cyl
+d4cyl[1,]
+colnames(d4cyl)[1] <- "cyl"
+d4cyl
+predict(q1model,d4cyl)
+d8cyl <- data.frame(c(8))
+colnames(d8cyl)[1] <- "cyl"
+predict(q1model,d8cyl)
+14.87826 - 26.38142
+summar(q1model)
+summary(q1model)
+resid(q1model)
+summary(q1model)$coef
+-2.87579 * 4
+q1model <- lm(mpg ~ I(wt) + factor(cyl), data = mtcars)
+predict(q1model,d8cyl)
+summary(q1model)$coef
+summary(q1model)
+-6.0709 + 4.2556
+-1.8153 * 2
+q1model <- lm(mpg ~ factor(cyl), data = mtcars)
+summary(q1model)
+?I
+summary(mtcars$cyl)
+factor(mtcars$cyl)
+plot(mtcars$cyl,mtcars$mpg)
+q1model <- lm(mpg ~ factor(cyl), data = mtcars)
+summary(q1model)$coef
+q1model <- lm(mpg ~ factor(cyl) + I(wt), data = mtcars)
+summary(q1model)$coef
+q1model <- lm(mpg ~ cyl + I(wt), data = mtcars)
+summary(q1model)$coef
+q1model <- lm(mpg ~ factor(cyl) + I(wt), data = mtcars)
+summary(q1model)$coef
+q1model <- lm(mpg ~ factor(cyl), data = mtcars)
+summary(q1model)$coef
+I(mtcars$wt)
+mtcars$wt
+mtcars$wtadj <- mtcars$wt
+mtcars$wtadj
+mtcars$wtadj <- 0
+mtcars$wtadj
+mtcars$wtadj <- 1
+q1modeldis <- lm(mpg ~ factor(cyl), data = mtcars)
+q1modeladj <- lm(mpg ~ factor(cyl) + I(wtadj), data = mtcars)
+summar(q1modeldis)$coeff
+summary(q1modeldis)$coeff
+summary(q1modeladj)$coeff
+summary(q1modeladj)
+install.packages(epicalc)
+anova(q1modeladj,q1modeldis)
+summary(lm(mpg ~ factors(cyl) -1,data=mtcars))$coef
+summary(lm(mpg ~ factor(cyl) -1,data=mtcars))$coef
+summary(lm(mpg ~ factor(cyl) + mpg -1,data=mtcars))$coef
+summary(lm(mpg ~ factor(cyl) + mpg ,data=mtcars))$coef
+summary(lm(mpg ~ factor(cyl) + I(wt) - 1 ,data=mtcars))$coef
+33.990794 - 27.919934
+summary(lm(mpg ~ factor(cyl) + I(wt) - 1 ,data=mtcars))
+summary(lm(mpg ~ factor(cyl) -1,data=mtcars))
+summary(lm(mpg ~ I(wt * 0.5) + factor(cyl), data = mtcars))$coeff
+mtcars$wtadj
+summary(lm(mpg ~ factor(cyl) + I(wtadj)  ,data=mtcars))
+summary(lm(mpg ~ factor(cyl) + I(wtadj)  ,data=mtcars))$coeff
+summary(lm(mpg ~ factor(cyl) + I(wtadj) -1 ,data=mtcars))
+summary(lm(mpg ~ factor(cyl) + I(wtadj) -1 ,data=mtcars))$coeff
+summary(lm(mpg ~ factor(cyl) + I(wtadj*2) -1 ,data=mtcars))$coeff
+x <- c(0.586, 0.166, -0.042, -0.614, 11.72)
+y <- c(0.549, -0.026, -0.127, -0.751, 1.344)
+q5fit <- lm (x ~ y)
+h <- hat(model.matrix(q5fit))
+plot(h,type="h")
+h
+q5fit <- lm (y ~ x)
+h <- hat(model.matrix(q5fit))
+h
+dfbeta(q5fit)
+dfbetas(q5fit)
+dfbeta(q5fit,hat=h)
+dfbetas(q5fit,hat=h)
+h
+dfbeta(q5fit,hat=h)
+data(mtcars)
+names(mtcars)
+head(mtcars)
+?mtcars
+modelFit <- lm(mpg ~ am,data=mtcars)
+coef(modelFit)
+modelFit <- lm(mpg ~ factors(am),data=mtcars)
+modelFit <- lm(mpg ~ factor(am),data=mtcars)
+coef(modelFit)
+manualCars <- mtcars[,mtcars$am==1]
+manualCars <- mtcars[mtcars$am==1,]
+dim(manualCars)
+autoCars <- mtcars[mtcars$am==0,]
+dim(autoCars)
+mean(autoCars$mpg)
+mean(manualCars$mpg)
+modelFit <- lm(mpg ~ am,data=mtcars)
+coef(modelFit)
+coef(modelFit)[1]
+coef(modelFit)[[1]]
+coef(modelFit)[[2]]
+modelFit
+testing <- plot(modelFit)
+?plot
+modelFit
+summary(modelFit)
+modelFit$res]
+modelFit$res
+plot(mtcars$am, modelFit$res, #
+     ylab="Residuals",#
+     xlab="Transmission type", #
+     xaxt='n') ## add a new axis with descriptions#
+axis(1, at=mtcars$am,labels=mtcars$transmission,  las=1)
+names(modelFit)
+modelFit$fitted.values
+modelFit$model
+modelFit$df.residual
+?smooth.spline
+modelFit$coefficients
+length(modelFit$residuals)
+length(modelFit$fitted.values)
+length(unique(modelFit$fitted.values))
+length(unique(modelFit$residuals))
+1e-6 * IQR(modelFit$fitted.values)
+apply(modelFit$fitted.values,1,smooth.spline)
+apply(modelFit$fitted.values,modelFit$residuals,smooth.spline)
+fitted(modelFit)
+unique(fitted(modelFit))
+residual.plots
+residual.plots.lm(modelFit)
+library(residual.plots)
+library(resplot)
+resplot(modelFit)
+install.packages("residual.plots")
+qqline(modelFit)
+qqline(modelFit$residuals)
+qqline( resid(modelFit))
+plot(density(resid(modelFit))) #A density plot#
+qqnorm(resid(modelFit)) # A quantile normal plot - good for checking normality#
+qqline(resid(modelFit))
+plot(density(resid(modelFit))) #A density plot#
+qqnorm(resid(modelFit)) # A quantile normal plot - good for checking normality
+plot(density(resid(modelFit))) #A density plot
+?plot
+library(DDPackage3)
+library(DDQuiz3)
+library(DDPQuiz3)
+data(mtcars)
+mtcars
+nrow(mtcars)
+data(state)
+nrow(state)
+state
+nrow(state)
+data(state.name)
+library(datasets)
+data(state)
+nrow(state)
+library(datasets)
+state
+state.name
+state.area
+state.x77
+setwd("~/Documents/Data Science/Developing Data Products/Project")
+ls
+dir
+ls()
+read("auto-mpg.data")
+mydata <- read.table("auto-mpg.data")
+mydata
+mydata.names <- read.table("auto-mpg.names")
+names(mydata) <- read.table("auto-mpg.names")
+read.table("auto-mpg.names")
+names(mydata) <- c("mpg","cylinders","displacement","horsepower","weight","acceleration","model.year","origin","car.name")
+head(mydata)
+summary(mydata$cylinders)
+setwd("~/Documents/Data Science/Developing Data Products")
+library(shiny)
+runApp("Project")
